@@ -1,0 +1,33 @@
+/* A and B are html elements like div,h1 etc. */
+*                       /* Select all elements. */
+A                       /* Select all A html elements. */
+#id                     /* Select the element with a specific id. */
+A B                     /* Select all B elements inside of A elements. */
+#id A                   /* Select all A elements inside of with a specisific id. */
+.class                  /* Select all elements with that class attributes. */
+A.class                 /* Select all A elements with that class attributes. */
+A,B                     /* Select all A and B elements. */
+A *                     /* Select all elements inside of A. */
+A+B                     /* Select B element which directly follows A element. */
+A~B                     /* Select all B elements which follows A element. */
+A>B                     /* Select B element which is children of A element. */
+A :first-child          /* Select first child element inside of A element. */
+A :only-child           /* Select an element which is the only element inside of A element. */
+A :last-child           /* Select last child element inside of A element. */
+A :nth-child(x)         /* Select xth child element inside of A element. */
+A :nth-last-child(x)    /* Select xth child element inside of A element, counting from the back. */
+A:first-of-type         /* Select first A element. */
+A:nth-of-type(odd)      /* Select odd A elements. */
+A:nth-of-type(even)     /* Select even A elements. */
+A:nth-of-type(xn+y)     /* Select yth element and starting from xth element. */
+A:only-of-type          /* Select A element which is the only element. */
+A:last-of-type          /* Select last element of A elements. */
+A:empty                 /* Select A elements which don't have children. */
+A:not(.class)           /* Select A elements without that class attributes. */
+A[M]                    /* Select A elements which have M html attributes like href,type etc. */
+[M="value"]             /* Select elements which M html attributes is value. */
+[M^="val"]              /* Select elements which M html attributes starts with val. */
+[M$="ue"]               /* Select elements which M html attributes ends with ue. */
+[M*="alu"]              /* Select elements which M html attributes contains alu. */
+
+/* CSS Diner Game: https://flukeout.github.io/ */
